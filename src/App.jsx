@@ -1,9 +1,11 @@
 import "./App.css";
 
+import ListEmployee from "./components/ListEmployee";
+
 function App() {
   return (
     <>
-      <h1>Welcome to employee management</h1>
+      <ListEmployee />
     </>
   );
 }
