@@ -8,3 +8,19 @@ export const listEmployees = () => {
     REST_API_BASE_URL + `?pageNo=${pageNo}&pageSize=${pageSize}`
   );
 };
+
+export const addEmployee = (employee) => {
+  return axios.post(REST_API_BASE_URL, employee);
+};
+
+export const getEmployee = (empId) => {
+  return axios.get(REST_API_BASE_URL + "/" + empId);
+};
+
+export const updateEmployee = (employee) => {
+  return axios.put(REST_API_BASE_URL, employee);
+};
+
+export const deleteEmployee = (employeeId) => {
+  return axios.delete(REST_API_BASE_URL + "/" + employeeId);
+};
